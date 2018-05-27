@@ -1,3 +1,8 @@
 TrajectoryPlannerROS:
-
+  controller_frequency: 5.0
   holonomic_robot: false
+  meter_scoring: true
+  pdist_scale: 1.0
+  gdist_scale: 1.0
+  sim_time: 3.0
+  vtheta_samples: 40

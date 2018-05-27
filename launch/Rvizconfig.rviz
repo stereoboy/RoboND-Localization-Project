@@ -5,8 +5,12 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
+        - /Camera1
         - /Camera1/Visibility1
         - /Map1
+        - /Pose1
+        - /LocalCostMap1
+        - /GlobalCostMap1
       Splitter Ratio: 0.5
     Tree Height: 710
   - Class: rviz/Selection
@@ -107,13 +111,13 @@ Visualization Manager:
       Visibility:
         GlobalCostMap: true
         Grid: true
-        LaserScan: true
+        LaserScan: false
         LocalCostMap: true
         Map: true
         Path (Global): true
         Path (Local): true
         Pose: true
-        PoseArray: true
+        PoseArray: false
         RobotModel: false
         Value: true
       Zoom Factor: 1
@@ -134,7 +138,7 @@ Visualization Manager:
       Max Color: 255; 255; 255
       Max Intensity: 999999
       Min Color: 0; 0; 0
-      Min Intensity: 0
+      Min Intensity: 8.40779079e-45
       Name: LaserScan
       Position Transformer: XYZ
       Queue Size: 10
@@ -166,7 +170,7 @@ Visualization Manager:
     - Alpha: 0.699999988
       Class: rviz/Map
       Color Scheme: map
-      Draw Behind: false
+      Draw Behind: true
       Enabled: true
       Name: Map
       Topic: /map
@@ -234,10 +238,10 @@ Visualization Manager:
       Topic: /move_base/current_goal
       Unreliable: false
       Value: true
-    - Alpha: 0.699999988
+    - Alpha: 0.5
       Class: rviz/Map
-      Color Scheme: map
-      Draw Behind: false
+      Color Scheme: costmap
+      Draw Behind: true
       Enabled: true
       Name: LocalCostMap
       Topic: /move_base/local_costmap/costmap
@@ -247,7 +251,7 @@ Visualization Manager:
     - Alpha: 0.699999988
       Class: rviz/Map
       Color Scheme: map
-      Draw Behind: false
+      Draw Behind: true
       Enabled: true
       Name: GlobalCostMap
       Topic: /move_base/global_costmap/costmap
@@ -279,7 +283,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 18.4638844
+      Distance: 7.52532625
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
@@ -294,10 +298,10 @@ Visualization Manager:
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 1.35479653
+      Pitch: 0.494797349
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 5.34858131
+      Yaw: 4.4385705
     Saved: ~
 Window Geometry:
   Camera:
@@ -317,5 +321,5 @@ Window Geometry:
   Views:
     collapsed: true
   Width: 1918
-  X: 2625
-  Y: 24
+  X: 381
+  Y: 101
